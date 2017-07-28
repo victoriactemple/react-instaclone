@@ -25,12 +25,18 @@ const Nav = styled.div`
 const SearchContainer = styled.div`
   background: #fafafa;
   border: 1px solid #dbdbdb;
+  width: 25%;
+  padding: 7px;
+  border-radius: 3px;
+  color: #999;
   svg{
     margin-bottom: 5px;
   }
   input{
     border: none;
-    background: inherit;
+    font-weight: 300;
+    background: transparent;
+    text-align: center;
   }
 `;
 

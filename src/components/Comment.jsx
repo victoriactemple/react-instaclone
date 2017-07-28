@@ -14,7 +14,6 @@ const CommentContainer = styled.div`
 class Comment extends Component {
   render() {
     const {comment} = this.props;
-    console.log(comment);
     return (
       <CommentContainer>
         <img src={comment.profile_pic}/>

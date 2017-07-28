@@ -22,7 +22,6 @@ class FakePost {
   generateLikes = (maxLikes = 10) => {
     const numberLikes = Math.floor(Math.random() * maxLikes) + 1;
     for (let i = 0; i <= numberLikes; i++) {
-      console.log(`${i} likes`)
       this.likes.push({
         username: Faker.internet.userName(),
         profile_pic: Faker.internet.avatar()
@@ -32,7 +31,6 @@ class FakePost {
   generateComments = (maxComments = 3) => {
     const numberLikes = Math.floor(Math.random() * maxComments) + 1;
     for (let i = 0; i <= numberLikes; i++) {
-      console.log(`${i} comments`)
       this.comments.push({
         id: Faker.random.uuid(),
         text: Faker.lorem.sentence(),

@@ -4,8 +4,12 @@ import Navbar from './components/Navbar';
 
 class App extends Component {
   render() {
+    const style = {
+      background: "rgba(249,249,249, 1)",
+      fontFamily: "Open Sans"
+    };
     return (
-      <div>
+      <div style={style}>
         <Navbar />
         <Posts />
       </div>

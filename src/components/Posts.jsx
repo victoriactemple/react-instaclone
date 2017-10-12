@@ -1,6 +1,14 @@
 import React, {Component} from 'react';
 import Post from './Post';
 import FakePost from '../seed/fakePost.js'
+import styled from 'styled-components'
+
+// const PostsWrapper = styled.div`
+// display: flex;
+// flex-direction: column;
+// align-items: center;
+// ` 
+
 
 class Posts extends Component {
   state = {
@@ -17,7 +25,7 @@ class Posts extends Component {
     return (
       <div>
         {this.state.posts.map(post => <Post key={post.id} post={post}/>)}
-      </div>
+     </div>
     )
   }
 }
